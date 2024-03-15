@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="mb-3">Список студентов</h1>
+        <h5 class="mb-3">Добавить нового студента</h5>
+<form action="#" id="addForm"> 
+<input type="text"  class="form-control mb-3" id="form__name" required placeholder="Имя">
+<input type="text"  class="form-control mb-3" id="form__surename" required placeholder="Фамилия">
+<input type="text"  class="form-control mb-3" id="form__lastname" required placeholder="Отчество">
+<input type="date"  class="form-control mb-3" id="form__birthday" required min="1900-01-01" max="2023-01-01" placeholder="Дата рождения">
+<input type="number"  class="form-control mb-3" id="form__startOfTraining" required min="2000" max="2023" placeholder="Дата начала обучения">
+<input type="text"  class="form-control mb-3" id="form__facultaru" required placeholder="Факультет">
+<button type="submit" class="btn btn-outline-primary mb-3">Добавить студента</button>
+</form>
+
+<form action="#" id="filter__form" class="mb-3">
+    <h5 class="mb-3">Фильтрация</h5>
+    <input id="filter__FIO" class="form-control mb-3" type="text" placeholder="ФИО">
+    <input id="filter__Birthday" class="form-control mb-3"  type="text" placeholder="День рождения">
+    <input id="filter__StartOfTraining" class="form-control mb-3"  type="text" placeholder="Дата начала обучения">
+    <input id="filter__Faculty" class="form-control mb-3"  type="text" placeholder="Факультет">
+</form>
+
+<div id="app">
+
+</div>
+    </div>
+    <script defer src="script.js"></script>
+</body>
+</html>
